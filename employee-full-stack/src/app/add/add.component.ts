@@ -27,9 +27,9 @@ export class AddComponent {
       "designation":this.designation,
       "salary":this.salary,
       "companyName":this.companyName,
-      "mobileNo":this.mobileNo,
       "username":this.username,
-      "password":this.password
+      "password":this.password,
+      "mobileNo":this.mobileNo
 
     }
     console.log(emp)
