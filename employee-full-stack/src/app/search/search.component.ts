@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { generate } from 'rxjs';
 import { ApiService } from '../api.service';
 
 @Component({
@@ -35,5 +36,17 @@ export class SearchComponent {
       }
     )
   }
+
+  deleteBtnClick= (empcode:any) => 
+  {
+let data:any={"empcode":empcode}
+this.api.deleteEmployee(data).subscribe(
+  (searchdata:any)=>
+  {
+    console.log(searchdata)
+  }
+)
+  }
+
 
 }
